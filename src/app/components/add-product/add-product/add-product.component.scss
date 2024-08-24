@@ -1,0 +1,61 @@
+
+// General Styling for the Product Add Section
+section.p-5 {
+    .border-bottom {
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+}
+
+// Styling for the Form
+.container-fluid {
+    form {
+        label {
+            display: block;
+        }
+    
+        input,
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+    
+            &:focus {
+            border-color: #000;
+            outline: none;
+            }
+        }
+        }
+
+        // Specific styles for the conditional fields
+        #size,
+        #weight,
+        #height,
+        #width,
+        #length {
+        margin-top: 10px;
+        }
+    
+        #height,
+        #width,
+        #length {
+        display: inline-block;
+        width: 50%; // Allows for three inputs in a row with some spacing
+        margin-right: 2%; // Small spacing between them
+        &:last-child {
+            margin-right: 0;
+        }
+        }
+    
+        #size,
+        #weight {
+        width: 50%; // Adjusts the width of size and weight inputs
+        }
+}
